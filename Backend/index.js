@@ -7,12 +7,9 @@ const cors = require("cors");
 
 dotenv.config();
 
-/*mongoose.connect(process.env.DATABASE_ACCESS, () =>
+mongoose.connect(process.env.DATABASE_ACCESS, () =>
   console.log("Database connected")
 );
-mongoose.connect(process.env.DATABASE_ACCESS, () => {
-  console.log("Server connected");
-});*/
 
 app.use(express.json());
 app.use(cors());

@@ -1,38 +1,376 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.ul {
+  display: flexbox;
+  align-content: center;
+}
+
+.aligner {
+  align-items: center;
+}
+.centralize {
+  text-align: center;
+}
+.centralize1 {
+  display: flex;
+  justify-content: center;
+}
+.comp {
+  font-size: larger;
+  text-decoration: none;
+  color: white;
+}
+.comp:link:active,
+.comp:visited:active {
+  color: white;
+}
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.container2 {
+  max-width: 90%;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.pwd {
+  content-visibility: hidden;
+}
+
+.container1 {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn1 {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 140px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn1:focus {
+  outline: none;
+}
+
+.btn1:active {
+  transform: scale(0.98);
+}
+
+.btn-block1 {
+  display: block;
+  height: max-content;
+  width: max-content;
+}
+
+.btn2 {
+  max-width: 10%;
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 2px 5px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn2:focus {
+  outline: none;
+}
+
+.btn2:active {
+  transform: scale(0.98);
+}
+
+.task {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right-align {
+  display: flex;
+  justify-content: right;
+}
+.edits {
+  max-width: 90%;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.edits1 {
+  max-width: 55%;
+}
+
+.center-align {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-columns: auto auto auto;
+  background-color: black;
+  padding: 10px;
+  background-image: linear-gradient(rgb(233, 233, 233), rgb(50, 50, 50));
+  align-content: center;
+}
+
+.grid-item {
+  padding-left: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task1 {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task1 h3 {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background: rgb(233, 233, 233);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: Roboto;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+}
+
+.app .header {
+  height: 5rem;
+  width: 100%;
+  background-color: #292929;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .menu-btn {
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.header .nav {
+  display: flex;
+  gap: 1rem;
+}
+.li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.app .body {
+  height: calc(100% - 5rem);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.app .body button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 50vh;
+  min-width: 20rem;
+  min-height: 25rem;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+  z-index: 200;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .modal-header {
+  height: 2.5rem;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(29, 29, 29);
+  position: relative;
+}
+
+.modal .modal-header h2 {
   color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.4rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.modal .modal-body {
+  height: 100%;
+  display: grid;
+  place-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-menu {
+  color: white;
+  height: 100vh;
+  width: 20%;
+  background-color: #292929;
+  z-index: 200;
+
+  transform: translateX(-100%);
+  transition: 0.3s;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  display: inline-flex;
+  justify-content: center;
+}
+
+.menu-open {
+  transform: translateX(0%);
 }
