@@ -61,7 +61,7 @@ const Newevent = () => {
           <input
             type="text"
             placeholder="YYYY-MM-DD"
-            value={stime}
+            value={sdate}
             onChange={(e) => setSdate(e.target.value)}
           ></input>
           <label>End Date (YYYY-MM-DD)</label>
